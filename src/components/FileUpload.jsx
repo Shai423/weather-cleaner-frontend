@@ -12,7 +12,7 @@ function FileUpload({ onSummary, onCleanedFile, onErrorLogFile }) {
     formData.append("file", file);
 
     try {
-      const response = await fetch("http://localhost:8000/api/clean", {
+      const response = await fetch("https://weather-cleaner-backend.onrender.com/api/clean", {
         method: "POST",
         body: formData,
       });
