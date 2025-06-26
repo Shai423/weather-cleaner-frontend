@@ -24,7 +24,7 @@ function App() {
       {cleanedFile && (
         <div className="text-center mt-6">
           <a
-            href={`http://localhost:8000/api/download?path=${encodeURIComponent(
+            href={`https://weather-cleaner-backend.onrender.com/api/download?path=${encodeURIComponent(
               cleanedFile
             )}`}
             className="bg-blue-600 text-white px-4 py-2 rounded-lg mr-4 hover:bg-blue-700"
@@ -33,7 +33,7 @@ function App() {
             📥 Download Cleaned Data
           </a>
           <a
-            href={`http://localhost:8000/api/download?path=${encodeURIComponent(
+            href={`https://weather-cleaner-backend.onrender.com/api/download?path=${encodeURIComponent(
               errorLogFile
             )}`}
             className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600"
